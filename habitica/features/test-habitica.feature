@@ -1,7 +1,7 @@
 Feature: Abrir registro de usuario
 
   Scenario: Como un usuario quiero ver la opcion registro de nuevos usuarios         
-    When I swipe left
+    When  I press view with id "skipButton"
     And I press "Register"
     Then I should see "Username"
     Then I should see "Email address"
