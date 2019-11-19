@@ -7,8 +7,8 @@ module.exports.generate = function(req,success,error){
     var appPackage;
     var apkInstall;
     console.log(req[0]);
-    switch(req.aplication){
-        case 'HABITICA_WEB':
+    switch(req.aplication.toUpperCase()){
+        case 'HABITICA':
             appPackage = 'habitica';
             apkInstall = 'habitica.apk';
             break;
